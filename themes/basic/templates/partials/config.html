@@ -1,0 +1,23 @@
+{% set color_config = get("secondary_color_scheme") %}
+
+<style type="text/css">
+    #footer-columns-region a, #footer-left-region a {
+    color: {{color_config.footer_color_changer.link_color}}
+    }
+
+    #footer-columns-region a:hover, #footer-left-region a:hover{
+    color: {{color_config.footer_color_changer.link_hover_color }};
+    }
+
+    #contacts-block a, #main-content-region a {
+    color: {{ color_config.link_color_contact_us.link_color }};
+    }
+
+    #contacts-block a:hover, #main-content-region a:hover {
+    color: {{ color_config.link_color_contact_us.link_hover_color }};
+    }
+
+</style>
+
+
+
