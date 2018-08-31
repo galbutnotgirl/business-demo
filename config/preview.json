@@ -1,7 +1,7 @@
 {
-        "apikey" : "bltbc2dd4bb54b463d1",
-        "accesstoken" : "blt04a5e37e9bea0121",
-        "environment" : "preview",
+        "apikey" : "<API-KEy>",
+        "accesstoken" : "<ACCESS-TOKEN>",
+        "environment" : "<ENVIRONMENT>",
         "port": "4000"    
 } 
 
