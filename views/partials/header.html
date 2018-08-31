@@ -1,0 +1,64 @@
+{# add your header here
+    to access header data use {{ partials.header.field_name }} #}
+    <div class="main-wrapper">
+    <div class="overlay"></div>
+
+    <header style="background-color:#3f51b5;">
+        <div class="container">
+            <div class="row">
+                <div id="logo-sec" class="logo col-md-3 text-center-sm">
+                    <a href="{{ partials.header.logo.link }}">
+                        <img src="{{ partials.header.logo.url }}" alt="logo" class="img-responsive">
+                    </a>
+                </div>
+    
+                <div id="menu-region" class="col-md-9">
+                    <nav class="navbar main-menu" role="navigation">
+                        <!-- Menu button for mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse">MENU</button>
+                        </div>
+                        <!-- Navigation links -->
+                        <div class="navbar-collapse navbar-ex1-collapse collapse" style="height: 0px;">
+    
+                            <ul class="nav navbar-right navbar-nav">
+
+                                {% for main_menu in partials.header.main_menu %} 
+                                <li>
+    
+                                     <a style="color:#fff" onMouseOver="this.style.color='#a21c16'" onMouseOut="this.style.color='#fff'" href="{{ main_menu.url }}" data-toggle="dropdown">{{ main_menu.title }}</a> 
+                                
+                                        {% if main_menu.sub_menu.length >0 %}
+                                    <ul class="dropdown-menu" style="background-color: #3f51b5">
+                                    {% for sub_menu in main_menu.sub_menu %}
+                                        <li>
+                                            <a style="color:#fff;" onMouseOver="this.style.color='#a21c16'; backgroundColor='#3f51b5' " onMouseOut="this.style.color='#fff'"
+                                                href="{{ sub_menu.url }}">{{ sub_menu.title }}</a>
+                                        </li>
+                                    {% endfor %}
+                            
+                                    </ul>
+                                  {% endif %}  
+                                </li>
+                                {% endfor %}
+                               
+                            </ul>
+                            <div class="lang-dropdown">
+                                <select id="language">
+                                    <option value="/">English</option>
+                                    <option value="/es/">Spanish</option>
+                                    <option value="/zh/">Chinese</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- /navbar-collapse -->
+                    </nav>
+                </div>
+                <!-- /menu-region -->
+    
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- container -->
+    </header>
+    </div>
