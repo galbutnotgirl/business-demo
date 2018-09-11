@@ -17,7 +17,7 @@ module.exports = exports = {
     ],
     plugins: {},
     contentstack: {
-        api_key: "<api_key>",
-        access_token: "<access_token>"
+        api_key: "bltbc2dd4bb54b463d1",
+        access_token: "blt04a5e37e9bea0121"
     }
 };
