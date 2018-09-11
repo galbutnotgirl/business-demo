@@ -4339,3 +4339,7 @@
 {"level":"info","message":"'In-progress' status has been saved on Built.io Contentstack.","timestamp":"2018-09-11T08:48:49.058Z"}
 {"level":"info","message":"{\"entry\":{\"name\":\"default\",\"status\":2,\"message\":\"Publish : Asset has been published successfully!\"}}","timestamp":"2018-09-11T08:48:54.226Z"}
 {"level":"info","message":"'Publish' status has been saved on Built.io Contentstack.","timestamp":"2018-09-11T08:48:56.315Z"}
+{"level":"info","message":"Attempting connection to the Built.io Contentstack server...","timestamp":"2018-09-11T08:56:07.291Z"}
+{"level":"info","message":"Connection ID: 0.9551523435938873","timestamp":"2018-09-11T08:56:19.392Z"}
+{"level":"info","message":"Connection authorized","timestamp":"2018-09-11T08:56:19.968Z"}
+{"level":"info","message":"Connection established successfully!","timestamp":"2018-09-11T08:56:22.358Z"}
